@@ -81,7 +81,7 @@ public class przyklad1 {
                 session.persist(umowa);
             }
         }
-        session.flush();
+        session.getTransaction().commit();
         session.close();
 
     }
